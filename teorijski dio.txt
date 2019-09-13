@@ -1,0 +1,36 @@
+1. Osnovna razlika izmeðu print and echo je da echo može primiti više parametara dok print samo jednu te print vraæa vrijednost 1 a echo ne vraæa nijednu vrijednost. (ako treba samo jednu naglasit onda je ta da echo uzima više parametara a print samo jednu, tj da echo može više stringova odjednom isprintat koji su meðusobno odvojeni sa "," zarezom)
+
+
+2. c) "&" 
+
+
+3. a) 12 
+
+
+4.POST i  DOWNLOAD
+
+5. 
+$(".menuitem".click(function()){
+alert("Neimplementirano!");
+
+6.
+012
+
+7.
+["January"=>"Ja","February"=>"Fe","March"=>"Ma","April"=>"Ap","May"=>"Ma","June"=>"Ju","July"=>"Ju","August"=>"Au","September"=>"Se","October"=>"Oc","November"=>"No","December"=>"De"]
+
+8. $_POST["korisnik"]; $_GET["akcija"];
+
+$_POST je superglobalna varijabla koja skriva podatke od svih osim od servera tako da šalje podatke preko HTTP post requesta. $_POST variabla je spremljena u obliku niza (kljuè1->varijabla1, kljuè2->varijabla2...) gdje je svaki kljuè forma a varijabla informacija koju je korisnik upisao
+
+9. $_SESSION je superglobalna varijabla string tipa koja sprema korisnièke informacije da se koriste preko više stranica npr. username. 
+
+
+10. 
+
+
+11. 
+INSERT INTO dijagonala (a,b,d)
+VALUES ($a,$b,$d)
+
+Odgovor ovisi o tome koje su tablice u bazi podataka, ako je samo "dijagonala" onda prima samo jednu vrijednost dijagonale d ili ako se upiše (a,b,d) onda æe sva tri podatka biti pod "dijagonala" što nisu a i b. 

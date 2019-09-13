@@ -1,0 +1,71 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f6f6f6;
+}
+.bodystyle {
+  background-color: #f6f6f6;
+  position: relative;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f3f3f3;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #333333;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #71b9d1;
+}
+
+.main {
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  background-color: #f6f6f6;
+  text-align: left;
+}
+
+#povrsinaJSBox, #obavijestBox, #povrsinaPHPBox {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.js_povrsina {
+  margin-top: 20px;
+  font-size: 24px;
+  padding: 10px;
+  color: green;
+}
+
+#footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: right;
+  z-index: 100;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

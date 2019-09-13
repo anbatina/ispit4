@@ -6,13 +6,63 @@ and open the template in the editor.
 -->
 <html>
     <head>
-       <title>Pocetak</title>
+         <title>Ispit3</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" type="text/css" href="mycss.css">
+
         <script src="jquery.min.js"></script>
-        <script src="myjquery.js"></script> 
+        <script src="myjquery.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     </head>
     <body>
+        <div class="bodystyle">
+
+        <div class="sidenav">
+            <a href="#povrsinajs" class="menuitem" id="povrsinajs">Povrsina JS</a>
+            <a href="#" class="menuitem" id="obavijest">Obavijest</a>
+            <a href="#povrsinaphp" class="menuitem" id="povrsinaphp">povrsina PHP</a>
+            <a href="#baza" class="menuitem">Baza</a>
+        </div>
+
+        <div id="povrsinaJSBox">
+             <div class="main">
+                <h2>Povrsina JS</h2>
+                <div>
+                  <label for="js_stranica_a">Stranica A:</label> <input id="js_stranica_a" />
+                </div>
+                <div>
+                  <label for="js_stranica_b">Stranica B:</label> <input id="js_stranica_b" />
+                </div>
+            </div>
+
+            <div class="slider-wrap" style="width:300px; margin: 0 auto;">
+                <p><label>stranica A:</label><div id="slider-range-min-a"></div> </p>
+                <p><label>stranica B:</label><div id="slider-range-min-b"></div></p>
+            </div>
+          <div class="js_povrsina" id="js_povrsina"></div>
+        </div>
+
+        <div id="obavijestBox" style="display: none">
+            <div class="obavijesti">
+              <button id="text_obavijest">Klikni me</button>
+            </div>
+        </div>
+
+        <div id="povrsinaPHPBox" style="display: none">
+            <form action="funkcije.php" method="POST">
+                <h2>povrsina</h2>
+                <label>stranica A:</label> <input type="text" id="stranica_a" name="stranica_a"><br>
+                <label>stranica B:</label> <input type="text" id="stranica_b" name="stranica_b"><br>
+                <label>povrsina:</label> <input type="text" id="povrsina" name="povrsina"><br>
+                <input id="izracunajPHP" type="submit" value="Izračunaj">
+            </form>
+        </div>
+   </div>
+    <div id="footer">
+
+    </div>
+
     </body>
 </html>
